@@ -14,7 +14,7 @@ export function CreateTodo() {
         e.preventDefault();
 
         axios
-            .post("http://localhost:8000/api/todo", data)
+            .post("https://m-todo.herokuapp.com/api/todo", data)
             .then((res) => {
                 setData({ title: "", description: "" });
                 console.log(res.data.message);
